@@ -1,0 +1,38 @@
+.year-counter {
+    text-align: center;
+    position: relative; /* สำหรับจัดการตำแหน่งของเส้นคัน */
+  }
+  
+  .years-list {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* จัดให้กลางในแนวตั้ง */
+    flex-wrap: wrap;
+    position: relative; /* ให้สามารถจัดการกับเส้นคันได้ */
+  }
+  
+  .line {
+    position: absolute; /* ให้เส้นคันอยู่ด้านหลัง */
+    width: 100%; /* ยาวเต็มพื้นที่ */
+    height: 2px; /* ความหนาของเส้น */
+    background-color: gray; /* สีของเส้น */
+    z-index: 1; /* วางเส้นไว้ด้านหลังปี */
+  }
+  
+  .year-item {
+    margin: 0 10px;
+    font-size: 20px;
+    position: relative; /* สำหรับให้ลูกศรชี้อยู่ด้านบน */
+    z-index: 2; /* วางปีไว้ด้านหน้าเส้น */
+    transition: color 0.3s;
+  }
+  
+  .year-item.active {
+    font-weight: bold;
+    color: blue; /* เปลี่ยนสีของปีที่กำลังชี้ */
+  }
+  
+  .icon {
+    margin-left: 5px; /* ระยะห่างระหว่างปีและลูกศร */
+  }
+  

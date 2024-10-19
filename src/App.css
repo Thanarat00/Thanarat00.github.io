@@ -1,0 +1,29 @@
+.year-counter {
+    text-align: center;
+  }
+  
+  .years-list {
+    display: flex; /* แสดงรายการเป็นแนวนอน */
+    flex-direction: row;
+    justify-content: center; /* จัดเรียงกลาง */
+    flex-wrap: wrap; /* จัดให้มีหลายแถวถ้าจำเป็น */
+    margin: 20px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+  }
+  
+  .year-item {
+    font-size: 24px;
+    margin: 0 10px; /* ขยับปีออกห่างกัน */
+    transition: background-color 0.3s ease;
+  }
+  
+  .year-item.active {
+    background-color: lightblue; /* เปลี่ยนสีเมื่อปีถูกเลือก */
+    border-radius: 5px; /* ทำให้มุมมน */
+    padding: 5px 10px; /* เพิ่มพื้นที่ภายใน */
+  }
+  
+  .icon {
+    margin-left: 5px; /* ขยับไอคอนออกห่างจากปี */
+    font-size: 20px; /* ขนาดไอคอน */
+  }
+  
