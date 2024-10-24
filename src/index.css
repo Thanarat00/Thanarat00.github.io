@@ -1,38 +1,41 @@
-.year-counter {
-    text-align: center;
-    position: relative; /* สำหรับจัดการตำแหน่งของเส้นคัน */
+.highcharts-figure {
+    margin: 0;
   }
   
-  .years-list {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* จัดให้กลางในแนวตั้ง */
-    flex-wrap: wrap;
-    position: relative; /* ให้สามารถจัดการกับเส้นคันได้ */
+  #play-controls {
+    max-width: 1000px;
+    margin: 1em auto;
   }
   
-  .line {
-    position: absolute; /* ให้เส้นคันอยู่ด้านหลัง */
-    width: 100%; /* ยาวเต็มพื้นที่ */
-    height: 2px; /* ความหนาของเส้น */
-    background-color: gray; /* สีของเส้น */
-    z-index: 1; /* วางเส้นไว้ด้านหลังปี */
+  #container {
+    height: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   
-  .year-item {
-    margin: 0 10px;
-    font-size: 20px;
-    position: relative; /* สำหรับให้ลูกศรชี้อยู่ด้านบน */
-    z-index: 2; /* วางปีไว้ด้านหน้าเส้น */
-    transition: color 0.3s;
+  #play-pause-button {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid rgba(2, 117, 255, 1);
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(2, 117, 255, 1);
+    transition: background-color 250ms;
   }
   
-  .year-item.active {
-    font-weight: bold;
-    color: blue; /* เปลี่ยนสีของปีที่กำลังชี้ */
+  #play-pause-button:hover {
+    background-color: rgba(2, 117, 255, 0.5);
   }
   
-  .icon {
-    margin-left: 5px; /* ระยะห่างระหว่างปีและลูกศร */
+  #play-range {
+    transform: translateY(2.5px);
+    width: calc(100% - 90px);
+    background: #f8f8f8;
+  }
+  
+  .highcharts-description {
+    margin: 0.3rem 10px;
   }
   
